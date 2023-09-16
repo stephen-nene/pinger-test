@@ -3,7 +3,7 @@ name: Debt Pinger
 on:
   push: 
   schedule:
-    - cron: "0 15-19 * * *"  # Runs every 10 minutes from 15:00 to 18:50 EAT
+   - cron: "*/10 15-18 * * *"   # Runs every 10 minutes from 15:00 to 18:50 EAT
 
 jobs:
   ping:
