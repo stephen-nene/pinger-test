@@ -1,16 +1,16 @@
-name: Debt Pinger
+# name: Debt Pinger
 
-on:
-  push: 
-  schedule:
-   - cron: "*/10 15-18 * * *"   # Runs every 10 minutes from 15:00 to 18:50 EAT
+# on:
+#   push: 
+#   schedule:
+#    - cron: "*/10 * * * *"   # Runs every 10 minutes from 15:00 to 18:50 EAT
 
-jobs:
-  ping:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+# jobs:
+#   ping:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v2
       
-    - name: Run Debt pinger script
-      run: bash debt_pinger.sh
+#     - name: Run Debt pinger script
+#       run: bash debt_pinger.sh
